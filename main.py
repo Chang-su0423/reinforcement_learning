@@ -30,7 +30,7 @@ def train():
         print(f"Episode {e+1}/{EPISODES} - Total Reward: {total_reward} - Steps: {steps}")
           # 绘制路径
 
-        if e % 10 == 0:  # 每50轮输出一次信息
+        if e % 50 == 0:  # 每50轮输出一次信息
             print(f"Episode {e+1} completed.")
             plot_path(path, MAP_SIZE, e)
 
